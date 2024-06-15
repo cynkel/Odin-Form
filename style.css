@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Norse-bold;
+    src: url(assets/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    max-width: 100vw;
+}
+
+.sidebar img {
+    width: 32vw;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    width: 32vw;
+    height: 120px;
+    top: 150px;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-family: Norse-bold, sans-serif;
+    font-size: 7rem;
+}
+
+.intro {
+    width: 520px;
+    margin: 50px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    justify-content: center;
+}
+
+.form-container {
+    align-self: flex-start;
+    background-color: white;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 40px;
+    height: 240px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 880px;
+}
+
+.itl {
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    align-items: flex-end;
+    gap: 58px;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+#fname, #email, #password, #lname, #phone, #confirm {
+    flex-basis: 30px;
+}
+
+input {
+    display: block;
+    width: 260px;
+    outline: 2px solid orange;
+    border-radius: 6px;
+    border: none;
+}
+
+input:invalid {
+    outline: 2px solid red;
+}
+
+label {
+    font-weight: 800;
+    font-size: 0.7rem;
+    margin-top: 24px;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(211, 95, 17);
+    color: white;
+    border: none;
+    margin: 36px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+div a {
+    text-decoration: none;
+    color: orange;
+}
+
+.login {
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+input:focus {
+    outline: rgb(0, 124, 128) solid ;
+}
